@@ -1,16 +1,17 @@
 import { createReadStream, createWriteStream, accessSync, constants } from "fs";
 import { pipeline } from "stream";
 
-import {processOn} from "./process.js";
+import { processOn } from "./process.js";
 import { validate } from "./validate.js";
-import {checkArgs} from "./checkArgs.js";
+import { checkArgsForDoubles } from "./checkArgsForDoubles.js";
 import { createTransformStreams } from "./createTransformStreams.js";
 
 processOn();
 
 const { stdin, stdout } = process;
 
-checkArgs();
+const args = process.argv.slice(2);
+checkArgsForDoubles(args);
 
 const config =
     process.argv.indexOf("-c") !== -1
