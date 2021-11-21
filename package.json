@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Strronciy/nodejs/issues"
   },
-  "homepage": "https://github.com/Strronciy/nodejs#readme"
+  "homepage": "https://github.com/Strronciy/nodejs#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
