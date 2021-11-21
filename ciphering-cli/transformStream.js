@@ -24,8 +24,7 @@ class TransformStream extends Transform {
 
         const getNewChar = (charCode, firstCharCode) => {
             return String.fromCodePoint(
-                ((charCode - firstCharCode + shift + 26) % 26) +
-                    firstCharCode || 66
+                ((charCode - firstCharCode + shift + 26) % 26) + firstCharCode
             );
         };
 
