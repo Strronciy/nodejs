@@ -1,0 +1,20 @@
+{
+  "name": "ciphering-cli",
+  "version": "1.0.0",
+  "description": "This is a comand line (CLI) application. Supported ciphers to encode/decode the text:\r * [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)\r * [Atbash cipher](https://en.wikipedia.org/wiki/Atbash)\r * [ROT-8 as variation of ROT-13](https://en.wikipedia.org/wiki/ROT13)",
+  "main": "ciphering-cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strronciy/nodejs.git"
+  },
+  "author": "Strronciy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strronciy/nodejs/issues"
+  },
+  "homepage": "https://github.com/Strronciy/nodejs#readme"
+}
